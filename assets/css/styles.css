@@ -1,0 +1,91 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	background: #000;
+	color: #fff;
+}
+
+.nav {
+	position: fixed;
+	top: 0;
+	background: #000;
+	width: 100%;
+    height: 64px;
+	display: flex;
+	justify-content: space-between;
+	gap: 20px;
+	padding: 10px;
+}
+
+.nav > input {
+    color: #ff0707;
+    border: 1px solid #ff0707;
+    border-radius: 10px;
+    padding: 10px 25px;
+    background: transparent;
+    max-width: 190px;
+    margin: 0 2rem;
+}
+
+.nav > img {
+    height: 100%;
+    margin: 0 2rem;
+    background-color: #ff0707;
+    padding: 0.2px;
+    border: solid 4px #ff0707;
+    border-radius: 40px;
+}
+
+.nav > h2 {
+    color: #ff0707;
+    text-align: center;
+    align-self: center;
+}
+
+.contenedor {
+	width: 90%;
+	max-width: 1000px;
+	margin: 100px auto 100px auto;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 40px;
+}
+
+.contenedor .pelicula {
+	text-align: center;
+}
+
+.contenedor .pelicula:hover {
+	transform: scale(110%);
+}
+
+.contenedor .pelicula:hover .contenedor .detalle {
+    display: grid;
+}
+
+.contenedor .pelicula .titulo {
+	font-size: 14px;
+	font-weight: 400;
+}
+
+.contenedor .pelicula .poster {
+	width: 100%;
+	margin-bottom: 10px;
+	border-radius: 15px;
+}
+
+.detalles {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+    background-color: #ff0707;
+}
